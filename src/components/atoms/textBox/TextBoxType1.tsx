@@ -1,7 +1,7 @@
 import { Input } from "antd";
 import { useController } from "react-hook-form";
 
-export const TextBox = ({ placeholder, control, name }: TextBox) => {
+export const TextBoxType1 = ({ placeholder, control, name }: TextBoxType1) => {
   //Initialize react hook from controller
   const { field, fieldState } = useController({
     name,
@@ -20,7 +20,7 @@ export const TextBox = ({ placeholder, control, name }: TextBox) => {
   );
 };
 
-interface TextBox {
+interface TextBoxType1 {
   placeholder: string;
   control: any;
   name: string;
